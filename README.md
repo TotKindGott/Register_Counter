@@ -1,5 +1,7 @@
 # Register_Counter
-As seen in POS software - a simple counter for bills &amp; coins in the cash register. 
+As seen in POS software - a simple counter for bills &amp; coins in the cash register.
+
+Demo: http://codepen.io/TKG/full/gqlvd/
 
 ***
 ### Current version: 1.3
