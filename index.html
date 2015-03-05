@@ -7,53 +7,95 @@
 	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<form>
-	<table>
-		<tr>
-			<th colspan="2">BILL$</th>
-			<th colspan="2">&cent;OINS</th>
-		</tr>
-		<tr>
-			<td><label for="B100">$100</label></td>
-			<td><input type="text" id="B100" tabindex="1" accesskey="d" autofocus /></td>
-			<!-- added autofocus to <input> above for desktop browsers -->
-			<td><label for="C25">&cent;25</label></td>
-			<td><input type="text" id="C25" tabindex="7" accesskey="c" /></td>
-		</tr>
-		<tr>
-			<td><label for="B50">$50</label></td>
-			<td><input type="text" id="B50" tabindex="2" /></td>
-			<td><label for="C10">&cent;10</label></td>
-			<td><input type="text" id="C10" tabindex="8" /></td>
-		</tr>
-		<tr>
-			<td><label for="B20">$20</label></td>
-			<td><input type="text" id="B20" tabindex="3" /></td>
-			<td><label for="C5">&cent;5</label></td>
-			<td><input type="text" id="C5" tabindex="9" /></td>
-		</tr>
-		<tr>
-			<td><label for="B10">$10</label></td>
-			<td><input type="text" id="B10" tabindex="4" /></td>
-			<td><label for="C1">&cent;1</label></td>
-			<td><input type="text" id="C1" tabindex="10" /></td>
-		</tr>
-		<tr>
-			<td><label for="B5">$5</label></td>
-			<td><input type="text" id="B5" tabindex="5" /></td>
-			<th colspan="2"><label for="total">TOTAL</label></th>
-		</tr>
-		<tr>
-			<td><label for="B1">$1</label></td>
-			<td><input type="text" id="B1" tabindex="6" /></td>
-			<td colspan="2"><span>$</span><input type="text" id="total" name="total" value="0.00" readonly="readonly" style="-moz-appearance: textfield; -webkit-appearance: none;" /></td>
-		</tr>
-		<tr>
-			<th colspan="2" class="btn"><button type="reset">RESET ALL</button></th>
-			<th colspan="2" class="btn"><button type="button" onclick="calculate()">CALCULATE</button></th>
-		</tr>
-	</table>
+<form id="counter">
+	  <button type="button" id="reset_button" title="ERASE DATA">&empty;</button>
+	  <table>
+		    <tr>
+			    <td>
+			    	<label for="B100">$100</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="B100" tabindex="1" accesskey="d" autofocus />
+			      	<!-- added autofocus to <input> above for desktop browsers -->
+			    </td>
+			    <td>
+			    	<label for="C25">&cent;25</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="C25" tabindex="7" accesskey="c" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td>
+			    	<label for="B50">$50</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="B50" tabindex="2" />
+			    </td>
+			    <td>
+			    	<label for="C10">&cent;10</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="C10" tabindex="8" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td>
+			    	<label for="B20">$20</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="B20" tabindex="3" />
+			    </td>
+			    <td>
+			    	<label for="C5">&cent;5</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="C5" tabindex="9" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td>
+			    	<label for="B10">$10</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="B10" tabindex="4" />
+			    </td>
+			    <td>
+			    	<label for="C1">&cent;1</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="C1" tabindex="10" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td>
+			      	<label for="B5">$5</label>
+			    </td>
+			    <td>
+			      	<input type="text" id="B5" tabindex="5" />
+			    </td>
+		    </tr>
+		    <tr>
+			    <td>
+			    	<label for="B1">$1</label>
+			    </td>
+			    <td>
+			    	<input type="text" id="B1" tabindex="6" />
+			    </td>
+			    <td colspan="2">
+			    	<span>$</span>
+			    	<input type="text" id="total" name="total" value="0.00" readonly="readonly" style="-moz-appearance: textfield; -webkit-appearance: none;" />
+			    </td>
+		    </tr>
+		    <tr id="hidden_row" style="display: none;">
+			    <td colspan="2">DEPOSIT</td>
+			    <td colspan="2">
+			    	<span>$</span>
+			    	<input type="text" id="deposit" name="deposit" value="0.00" readonly="readonly" style="-moz-appearance: textfield; -webkit-appearance: none;" />
+			    </td>
+		    </tr>
+	  </table>
 </form>
-<script type="text/javascript" href="scripts.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

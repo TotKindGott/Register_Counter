@@ -1,83 +1,171 @@
 /* Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) http://cssreset.com */
- 
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figure, figcaption, footer, header,
-menu, nav, output, section, summary, time, mark, audio, video {
-	margin: 0; padding: 0; border: 0;
-	font-size: 100%; vertical-align: middle;
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figure, figcaption, footer, header, menu, nav, output, section, summary, time, mark, audio, video {
+	margin: 0; 
+    padding: 0; 
+    border: 0;
+	font-size: 100%; 
+    vertical-align: middle;
 }
- 
+
 /* Custom Styles */
- 
+
 body {
-	width: 100%; background-color: #C0C0C0; font-size: 250%;
+    width: 100%; 
+    background-color: rgba(0,0,0,0.5); 
+    font-size: 250%;
 }
- 
+
 form {
-	width: 18em; padding: 0.75em 0.5em; margin: 0.5em auto auto; background-color: #CCC;
-	border: 1px solid #AAA; border-radius: 0.33em;
-	box-shadow: 0 0 0.35em #000, 0 0 0.2em #000 inset;
+    width: 17em; 
+    padding: 0.75em; 
+    margin: 0.5em auto 1em auto;
+  	background-color: rgba(220,220,220,0.5);
+  	border: 1px solid #AAA; 
+    border-radius: 0.33em;
+    box-shadow: 0 0 0.35em #000, 0 0 0.2em #000 inset;
+  	position: relative;
 }
- 
+
 table {
 	width: 16em;
-	font-family: Courier, monospace; color: #000000; text-align: center;
-	text-shadow: 0 0 0.05em #81713A;
-	margin: auto; padding: 0;
-	border: 0.05em solid #CCC; border-collapse: separate; border-spacing: 0.25em;
+	font-family: Courier, monospace; 
+    color: #000000; 
+    text-align: center;
+	margin: auto; 
+    padding: 0;
 	table-layout: auto;
 }
- 
+
 tr {
-	margin: auto; height: 1.5em;
+	margin: auto; 
+    height: 1.5em;
 }
- 
-td {
-	width: 2em; margin: auto; padding: 0;
-	text-align: right; font-size: 1em; font-weight: bold;
+
+td:not(label) {
+  	width: 2em; 
+    margin: auto; 
+    padding: 0;
+	text-align: right; 
+    font-size: 1em; 
+    font-weight: bold;
 }
- 
+
 th:not(.btn) {
-	margin: auto; padding: 0;
-	text-align: center; font-size: 1.25em; font-weight: bold; color: rgba(255,255,255,0.85); text-shadow: 0 0 0.05em #000, 0 0 0.1em #FFF;
+	margin: auto; 
+    padding: 0;
+	text-align: center; 
+    font-size: 1.25em; 
+    font-weight: bold; 
+    color: rgba(255,255,255,0.85); 
+    text-shadow: 0 0 0.05em #000, 0 0 0.1em #FFF;
 	box-shadow: 0 0 0.15em rgb(255,255,255) inset, 0 0 0.35em rgba(255,255,255,0.85) inset, 0 0 0.05em #000;
-	border: 1px solid #FFF; border-radius: 10px; background-color: #000;
+	border: 1px solid #FFF; 
+    border-radius: 10px; 
+    background-color: #000;
 }
- 
-#total {
-	width: 6em; border: 1px solid #AAA;
-	font-weight: bold; font-family: Courier, monospace; font-size: 1em; color: #000000;
+
+#total, #deposit {
+	width: 6em; 
+    border: 1px solid #AAA;
+	font-weight: bold; 
+    font-family: Courier, monospace; 
+    font-size: 1em; 
+    color: #000000;
 	outline: none;
 }
- 
-#total::-moz-selection {
-	color: #000; background-color: transparent;
+
+#deposit {
+	color: rgba(255,255,255,0.75);
+	box-shadow: 0 0 0.2em black inset; 
+    border: 1px solid #AAA; 
+    border-radius: 10px;
 }
- 
+
+#total::-moz-selection, #deposit::-moz-selection {
+	color: #000; 
+    background-color: transparent;
+}
+
 input {
-	width: 4em; padding: 0.1em;
-	font-family: Courier, monospace; font-size: 1em; text-align: right; font-weight: bold; text-shadow: 0 0 0.1em rgba(255,255,255,1), 0 0 0.2em rgb(129,113,58);
-	box-shadow: 0 0 0.2em black inset; border: 1px solid #AAA; border-radius: 10px;
+	width: 4em; 
+    padding: 0.1em;
+	font-family: Courier, monospace; 
+    font-size: 1em; 
+    text-align: right; 
+    font-weight: bold; 
+	box-shadow: 0 0 0.2em black inset; 
+    border: 1px solid #AAA; 
+    border-radius: 10px;
 	outline: none;
+	background-color: rgba(0,0,0,0.5); 
+    color: rgba(255,255,255,0.75);
+	-moz-appearance: textfield; 
+    -webkit-appearance: none;
 }
- 
-input:active, input:focus, input:hover {
-	box-shadow: 0 0 0.25em rgb(129,113,58) inset, 0 0 0.5em rgb(204,178,92) inset;
+
+input:active, input:focus {
+	-moz-appearance: textfield; 
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0.25); 
+    color: rgba(0,0,0,0.75)
 }
- 
-button {
-	width: 6.5em; margin: auto; padding: 0; height: 1.5em;
-	font-family: Courier, monospace; text-align: center; font-size: 1.25em; font-weight: bold; color: rgba(255,255,255,0.85); text-shadow: 0 0 0.05em #000, 0 0 0.1em #FFF;
-	box-shadow: 0 0 0.15em rgb(255,255,255) inset, 0 0 0.35em rgba(255,255,255,0.85) inset, 0 0 0.05em #000;
-	border: 1px solid #FFF; border-radius: 10px; background-color: #000;
+
+input:not(#total):not(#deposit):active, 
+input:not(#total):not(#deposit):focus {
+    text-decoration: underline;
+}
+
+input:not(#total):not(#deposit):hover {
+	-moz-appearance: textfield; 
+    -webkit-appearance: none;
+    text-decoration: underline;
+}
+
+td, label, label:active, label:focus, label:hover {
 	outline: none;
+	font-family: Courier, monospace; 
+    text-align: center; 
+    font-size: 1em; 
+    font-weight: bold;   
+    color: rgba(0,0,0,0.75);
 }
- 
-button:hover {
-	box-shadow: 0 0 0.25em rgb(129,113,58) inset, 0 0 0.5em rgb(204,178,92) inset;
-	text-shadow: 0 0 0.05em #000, 0 0 0.1em #CCB25C;
-	background-color: #FFF; color: #000;
+
+#hidden_row td {
+	padding-top: 0.5em;
+}
+
+#reset_button {
+	font-size: 0.5em; 
+    color: rgba(220,220,220,0.25);
+	position: absolute; 
+    top: 0.5em; 
+    right: 0.5em;
+	outline: none; 
+    border: none;
+	background-color: transparent;
+	transition: all 0.35s linear;
+	transform: rotate(-6.28rad);
+}
+
+#reset_button::-moz-focus-inner {
+    outline: 0; 
+    border: 0;
+}
+
+#reset_button:focus {
+    outline: 0; 
+    border: 0;
+}
+
+#reset_button:hover, 
+#reset_button:active {
+	color: white;
+	font-size: 1em;
+	top: 0; 
+    right: 0;
+	transition: all 0.35s linear;
+	transform: rotate(6.28rad);
+	outline: 0;
+    overflow: visible;
 }
