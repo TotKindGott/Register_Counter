@@ -131,6 +131,10 @@ td, label, label:active, label:focus, label:hover {
     color: rgba(0,0,0,0.75);
 }
 
+#hidden_row {
+    display: none;
+}
+
 #hidden_row td {
     padding-top: 0.5em;
 }
