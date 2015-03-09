@@ -18,7 +18,7 @@ Strict but wise input - numbers only. Rejects any letter or non-digit character 
 * October 2013 - version 1.0 (first build of the program)
 * August 2014 - version 1.2 (code refactoring & styling)
 * August 2014 - version 1.3 (regex input validation)
-* February 2015 - version 1.4 (slight redesign & code refactoring)
+* March 2015 - version 1.4 (slight redesign & code refactoring)
 
 ***
 ## FUTURE PLANS
