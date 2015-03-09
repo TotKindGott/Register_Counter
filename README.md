@@ -4,8 +4,8 @@ As seen in POS software - a simple counter for bills &amp; coins in the cash reg
 Demo: http://codepen.io/TKG/full/gqlvd/
 
 ***
-### Current version: 1.3
-### Latest changes: regex input validation
+### Current version: 1.4
+### Latest changes: slight redesign & code refactoring
 
 ***
 ## ABOUT PROGRAM
@@ -18,7 +18,9 @@ Strict but wise input - numbers only. Rejects any letter or non-digit character 
 * October 2013 - version 1.0 (first build of the program)
 * August 2014 - version 1.2 (code refactoring & styling)
 * August 2014 - version 1.3 (regex input validation)
+* February 2015 - version 1.4 (slight redesign & code refactoring)
 
 ***
 ## FUTURE PLANS
-* Add Internet Explorer support
+* Remove annoying reset button's behavior on mobile devices
+* Add Internet Explorer support ( possibly )
